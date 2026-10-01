@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Ejercicio1</string>
+    <string name="saludo">Hola mundo</string>
+    <string name="EscribirContraseña">Contraseña</string>
+    <string name="EscribirEmail">Email</string>
+    <string name="Nohaycuenta">No tienes cuenta? Regístrate</string>
+    <string name="texoBotonAcceso">Entrar</string>
+
+</resources>
