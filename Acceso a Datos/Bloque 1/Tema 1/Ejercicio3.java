@@ -34,7 +34,7 @@ public class Ejercicio3 {
             escribir.seek(posicion);
 
             // Escribir el carácter en la posición indicada
-            escribir.write((char)caracter);
+            escribir.write((char) caracter);
 
             escribir.close();
             leerDatos.close();
