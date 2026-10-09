@@ -8,32 +8,31 @@ public class Ejercicio4 {
 
     public static void main(String[] args) {
 
-        String origen = "C:\\Users\\PC111\\Desktop\\2-DAM\\Acceso a Datos\\Bloque 1\\Tema 1\\foto4.png";
-        String destino = "C:\\Users\\PC111\\Desktop\\2-DAM\\Acceso a Datos\\Bloque 1\\Tema 1\\foto_copia_ej4.jpg";
-
         int contadorBloques = 0;
+        // Este contador sirve para cada vez que se copie un bloque, el ++ en el bucle haga que ese contador vaya aumentando cada vez que se copia correctamente
 
         try (
-            BufferedInputStream bis = new BufferedInputStream(new FileInputStream(origen));
-            BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(destino))
+            BufferedInputStream bis = new BufferedInputStream(
+                    new FileInputStream("C:\\Users\\iYaki\\OneDrive\\Escritorio\\trabajos temporales 2ºDAM\\foto.png"));
+            BufferedOutputStream bos = new BufferedOutputStream(
+                    new FileOutputStream("C:\\Users\\iYaki\\OneDrive\\Escritorio\\trabajos temporales 2ºDAM\\foto_copia.png"));
         ) {
-            
+
             byte[] buffer = new byte[1024];
             int bytesLeidos;
 
             while ((bytesLeidos = bis.read(buffer)) != -1) {
+
                 bos.write(buffer, 0, bytesLeidos);
 
                 contadorBloques++;
                 System.out.println("Fin copia bloque " + contadorBloques);
             }
-            
-            bis.close();
-            bos.close();
+
             System.out.println("Copia finalizada correctamente.");
 
         } catch (IOException e) {
-            System.out.println("Error al copiar el fichero: " + e.getMessage());
+            System.out.println("Error durante la copia: " + e.getMessage());
         }
     }
 }

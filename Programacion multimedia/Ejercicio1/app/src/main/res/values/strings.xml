@@ -5,5 +5,10 @@
     <string name="EscribirEmail">Email</string>
     <string name="Nohaycuenta">No tienes cuenta? Regístrate</string>
     <string name="texoBotonAcceso">Entrar</string>
+    <string name="Titulo">Últimos movimientos</string>
+    <string name="CafeteríaLaParrilla">Cafetería La Parrilla</string>
+    <string name="BotonParaAlimentacion">Alimentación</string>
+    <string name="dinero">-1,50€</string>
+    <string name="Gasto_dinero">Gasto</string>
 
 </resources>

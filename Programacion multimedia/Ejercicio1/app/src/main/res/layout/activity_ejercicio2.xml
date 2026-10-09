@@ -10,11 +10,14 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         android:layout_marginEnd="84dp"
         android:layout_marginBottom="52dp"
-        android:text="TextView"
+        android:text="NOMBRE"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.94" />
 
@@ -23,6 +26,8 @@
         android:layout_width="113dp"
         android:layout_height="145dp"
         android:layout_marginTop="16dp"
+        android:layout_marginBottom="133dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintEnd_toStartOf="@+id/textView3"
         app:layout_constraintHorizontal_bias="0.584"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,22 +35,10 @@
         app:srcCompat="@drawable/_ab6ea307df8cba834425ac77912ca71" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="84dp"
-        android:layout_marginBottom="52dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
-        app:layout_constraintEnd_toStartOf="@+id/textView4"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.94" />
-
-    <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Adrian"
         tools:layout_editor_absoluteX="162dp"
         tools:layout_editor_absoluteY="121dp" />
 
@@ -56,7 +49,7 @@
         android:layout_marginTop="28dp"
         android:layout_marginEnd="52dp"
         android:layout_marginBottom="55dp"
-        android:text="TextView"
+        android:text="SEGUIDORES"
         app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -66,12 +59,11 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="88dp"
         android:layout_marginEnd="52dp"
-        android:text="TextView"
+        android:text="1200"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
         tools:layout_editor_absoluteY="121dp" />
 
     <TextView
@@ -102,14 +94,11 @@
         android:id="@+id/tableLayout"
         android:layout_width="382dp"
         android:layout_height="525dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginBottom="1dp"
         android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.448"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.729">
+        app:layout_constraintStart_toStartOf="parent">
 
         <TableRow
             android:layout_width="match_parent"
@@ -198,14 +187,13 @@
     </TableLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="409dp"
         android:layout_height="70dp"
-        android:layout_marginTop="1dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout">
+        tools:layout_editor_absoluteY="820dp">
 
         <ImageView
             android:id="@+id/imageView14"
