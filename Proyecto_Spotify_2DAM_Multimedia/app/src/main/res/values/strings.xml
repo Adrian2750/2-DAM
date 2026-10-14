@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Proyecto_Spotify_2ºDAM_Multimedia</string>
+    <string name="Mi_lista">Lista de Avicii</string>
+    <string name="Numero_canciones">8 canciones</string>
+    <string name="Minutos_canciones_total">X minutos</string>
+    <string name="Avicii1">Avicii</string>
+</resources>

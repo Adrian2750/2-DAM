@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#252424"
+    android:foregroundTint="@color/black"
+    tools:context=".MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView2"
+        android:layout_width="407dp"
+        android:layout_height="414dp"
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="369dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CardCancion4"
+                android:layout_width="412dp"
+                android:layout_height="103dp"
+                android:background="#A60BB3"
+                android:backgroundTint="#A60BB3">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/Artista_1"
+                        android:layout_width="76dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="25dp"
+                        android:foregroundTint="@color/Colornegro"
+                        android:text="@string/Avicii1"
+                        android:textColor="@color/Colornegro"
+                        android:textSize="24sp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:layout_editor_absoluteX="91dp" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CardCancion3"
+                android:layout_width="412dp"
+                android:layout_height="103dp"
+                android:background="#1F1920"
+                android:backgroundTint="#A60BB3" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CardCancion1"
+                android:layout_width="412dp"
+                android:layout_height="103dp"
+                android:background="#A60BB3"
+                android:backgroundTint="#A60BB3" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CardCancion2"
+                android:layout_width="412dp"
+                android:layout_height="103dp"
+                android:background="#A60BB3"
+                android:backgroundTint="#A60BB3" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CardCancion5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <ImageView
+        android:id="@+id/imgAvicii"
+        android:layout_width="245dp"
+        android:layout_height="296dp"
+        android:layout_marginBottom="68dp"
+        app:layout_constraintBottom_toTopOf="@+id/nestedScrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/avicii" />
+
+    <TextView
+        android:id="@+id/txtNombrelista"
+        android:layout_width="157dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/Mi_lista"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgAvicii" />
+
+    <TextView
+        android:id="@+id/txtNumeroCanciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="25dp"
+        android:text="@string/Numero_canciones"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/txtNombrelista"
+        app:layout_constraintTop_toBottomOf="@+id/imgAvicii" />
+
+    <TextView
+        android:id="@+id/txtMinutos_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Minutos_canciones_total"
+        tools:layout_editor_absoluteX="312dp"
+        tools:layout_editor_absoluteY="334dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

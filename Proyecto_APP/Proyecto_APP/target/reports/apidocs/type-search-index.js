@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"com.mycompany.proyecto_app","l":"JFrame_VentanaPrincipal"},{"p":"com.mycompany.proyecto_app","l":"JPanel_historial"},{"p":"com.mycompany.proyecto_app","l":"JPanel_inicio"},{"p":"com.mycompany.proyecto_app","l":"Proyecto_APP"}];updateSearchResults();
