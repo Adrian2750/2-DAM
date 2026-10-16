@@ -21,6 +21,7 @@ public class JPanel_historial extends javax.swing.JPanel {
     public JPanel_historial() {
         initComponents();
         
+        cargarHistorial();
         
     }
 
